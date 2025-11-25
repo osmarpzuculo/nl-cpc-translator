@@ -1,0 +1,56 @@
+graph TB
+    subgraph "Frontend - React 19"
+        A[User Interface]
+        B[TranslatorCard Component]
+        C[Mode: NL → CPC]
+        D[Mode: CPC → NL]
+        E[History View]
+        
+        A --> B
+        B --> C
+        B --> D
+        B --> E
+    end
+    
+    subgraph "Backend - Express + tRPC"
+        F[tRPC Router]
+        G[translation.nlToCpc]
+        H[translation.cpcToNl]
+        I[translation.history]
+        J[LLM Integration]
+        K[Fallback Logic]
+        
+        F --> G
+        F --> H
+        F --> I
+        G --> J
+        H --> J
+        J --> K
+    end
+    
+    subgraph "Database - MySQL"
+        L[(translations table)]
+        M[(users table)]
+        
+        L -.-> M
+    end
+    
+    subgraph "External Services"
+        N[Manus LLM API]
+    end
+    
+    C -->|tRPC Client| G
+    D -->|tRPC Client| H
+    E -->|tRPC Client| I
+    
+    G -->|Save| L
+    H -->|Save| L
+    I -->|Query| L
+    
+    J -->|API Call| N
+    
+    style A fill:#e1bee7
+    style B fill:#ce93d8
+    style J fill:#90caf9
+    style L fill:#a5d6a7
+    style N fill:#ffcc80
