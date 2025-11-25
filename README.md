@@ -23,7 +23,7 @@
 
 O **Tradutor NL ↔ CPC** é um agente de inteligência artificial desenvolvido para promover a compreensão dos fundamentos da lógica formal e suas aplicações em IA. O sistema realiza tradução bidirecional entre **Linguagem Natural** (português) e **Cálculo Proposicional Clássico (CPC)**, permitindo que usuários convertam frases cotidianas em fórmulas lógicas e vice-versa.
 
-[Clique aqui para assistir um vídeo demonstrativo da aplicação em funcionamento.](https://www.loom.com/share/6e4c34699c604cfc9d30198ae0560e19)
+Clique [aqui](https://www.loom.com/share/6e4c34699c604cfc9d30198ae0560e19) para assistir um vídeo demonstrativo da aplicação em funcionamento.
 
 ### Objetivos
 
