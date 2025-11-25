@@ -704,6 +704,7 @@ Este projeto serve como base sólida para exploração adicional de aplicações
 ## 👥 Autores
 
 **Osmar Zuculo** - Desenvolvedor do sistema
+
 **Manus AI** - Auxílio no desenvolvimento do sistema e pesquisas
 
 ---
